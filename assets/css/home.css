@@ -8,7 +8,7 @@ body.create .textarea
 	padding: 10px 12px;
 }
 
-body.create textarea
+body.create .textarea textarea
 {
 	resize: none;
 	padding: 0;
@@ -19,7 +19,7 @@ body.create textarea
 	border: 2px solid #ccc;
 }
 
-body.create .actions
+body.create .textarea .actions
 {
 	margin: 10px 0 0 0;
 }

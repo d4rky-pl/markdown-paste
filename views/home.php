@@ -11,11 +11,11 @@
 	<script type="text/javascript" src="https://raw.github.com/js-coder/cookie.js/master/cookie.min.js"></script>
 	<script type="text/javascript" src="<?php echo $url ?>assets/js/base.js"></script>
 	<script type="text/javascript" src="<?php echo $url ?>assets/js/home.js"></script>
-	<title>Markdown Paste 0.2v</title>	
+	<title>Markdown Paste 0.3v</title>	
 </head>
 <body class="create">
 	<div id="top_bar">
-		<b>Markdown Paste 0.2v</b>
+		<b>Markdown Paste 0.3v</b>
 		<ul>
 			<li><select name="style" id="style"><option value="default.css">default.css</option><option value="base.css">base.css</option></select></li>
 			<li><a href="<?php echo $url ?>">CREATE NEW PASTE</a></li>

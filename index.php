@@ -1,9 +1,12 @@
 <?php
-$request = preg_replace('@^/@','', str_replace('..','.',$_SERVER['PATH_INFO']));
+define("UNIQUE_PASTE_KEY", "");
 
+session_start();
+require_once("lib/parser.php");
+$url = isset($_GET['file']) ? $_GET['file'] : '/';
+$request = preg_replace('@^/@','', str_replace('..','.',$url));
 if($request)
 {
-	require_once("lib/parser.php");
 	$parser = new Parser($request);
 
 	if(isset($_GET['raw']))
@@ -18,13 +21,15 @@ if($request)
 	{
 		$parser->render_html();
 	}
+
 }
 
 if(isset($_POST['paste']))
 {
-	$filename = uniqid().".md";
-	file_put_contents('txt/'.$filename, $_POST['paste']);
-	header("Location: ".$filename);
+	$parser = new Parser;
+	$parser->save($_POST['paste']);
+	$_SESSION['new_paste'] = TRUE;
+	$parser->redirect();
 }
 
 $url = (isset($_SERVER['SCRIPT_NAME']) ? substr($_SERVER['SCRIPT_NAME'], 0, strrpos($_SERVER['SCRIPT_NAME'], '/')) : '').'/';

@@ -1,16 +1,21 @@
-h1,h2,h3,h4,h5,h6 { margin-bottom: 15px; border-bottom: 1px solid #e0e0e0; padding-bottom: 2px }
+#markdown h1,
+#markdown h2,
+#markdown h3,
+#markdown h4,
+#markdown h5,
+#markdown h6 { margin-bottom: 15px; border-bottom: 1px solid #e0e0e0; padding-bottom: 2px }
 
-h2 { color: #607848;}
-h3 { color: #086092;}
+#markdown h2 { color: #607848;}
+#markdown h3 { color: #086092;}
 		
-h1 { font-size: 22px; line-height: 26px; margin-bottom: 9px;}
-h2 { font-size: 20px; line-height: 24px; }
-h3 { font-size: 18px; line-height: 22px; } 
-h4 { font-size: 16px; line-height: 20px; }
-h5 { font-size: 14px; line-height: 18px; }
-h6 { font-size: 12px; line-height: 16px; font-weight: bold;}
+#markdown h1 { font-size: 22px; line-height: 26px; margin-bottom: 9px;}
+#markdown h2 { font-size: 20px; line-height: 24px; }
+#markdown h3 { font-size: 18px; line-height: 22px; } 
+#markdown h4 { font-size: 16px; line-height: 20px; }
+#markdown h5 { font-size: 14px; line-height: 18px; }
+#markdown h6 { font-size: 12px; line-height: 16px; font-weight: bold;}
 		
-h1 
+#markdown h1 
 {
 	background: #789048; 
 	border-bottom: 3px solid #607848; 
@@ -24,7 +29,7 @@ h1
 	box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
-h4
+#markdown h4
 {
 	background: #56ABD2; 
 	border-bottom: 2px solid #086092; 
@@ -35,7 +40,7 @@ h4
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.5)
 }
 
-hr 
+#markdown hr 
 { 
 	margin: 20px -23px 20px -23px; 
 	height: 30px;
@@ -44,7 +49,7 @@ hr
 	border-bottom: 3px solid #5D513F;
 }
 
-pre > code 
+#markdown pre > code 
 {
 	padding: 0; 
 	background: none;
