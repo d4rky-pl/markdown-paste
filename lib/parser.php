@@ -50,7 +50,7 @@ class Parser
 	public function render_raw()
 	{
 		header("Content-type: text/plain; charset=utf-8");
-		echo $this->file;
+		echo trim(file_get_contents($this->path));
 		exit;
 	}
 
@@ -58,7 +58,7 @@ class Parser
 	{
 		header('Content-type: application/force-download');
 		header('Content-Disposition: attachment; filename="'.addslashes($request).'"');
-		echo $this->file;
+		echo trim(file_get_contents($this->path));
 		exit;
 	}
 
