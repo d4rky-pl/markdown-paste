@@ -1,5 +1,5 @@
 <?php
-define("UNIQUE_PASTE_KEY", "");
+define("UNIQUE_PASTE_KEY", "XYZ");
 
 session_start();
 require_once("lib/parser.php");
