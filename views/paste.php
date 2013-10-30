@@ -13,7 +13,7 @@
 	<script type="text/javascript" src="<?php echo $url ?>assets/js/home.js"></script>
 	<title>Markdown Paste 0.4v</title>	
 </head>
-<body class="create">
+<body <?php if(isset($modify_paste)) echo 'class="create"' ?>>
 	<div id="top_bar">
 		<b>Markdown Paste 0.4v</b>
 		<ul>
@@ -24,7 +24,7 @@
 		</ul>
 	</div>
 
-	<div id="markdown"><?php echo $content ?></div>
+	<div id="wrapper"><div id="markdown"><?php echo $content ?></div></div>
 
 <?php if(isset($new_paste)): ?>
 

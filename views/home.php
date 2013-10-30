@@ -22,7 +22,7 @@
 		</ul>
 	</div>
 
-	<div id="markdown"></div>
+	<div id="wrapper"><div id="markdown"></div></div>
 
 	<div class="paste_code">
 		<form method="post">
